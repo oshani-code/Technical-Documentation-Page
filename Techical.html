@@ -1,106 +1,58 @@
-<!-- Solution for Build a Technical Documentation Page -->
-
+<!-- Solution for Build a Survey Form -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8">
+  <title></title>
   <meta name="viewport"
-      content="width=device-width, initial-scale=1.0"
-  <link rel="stylesheet" href="./styles.css"/>
-</head>
-<body>
-      <main id="main-doc">
-<link rel="stylesheet" href="./styles.css"/>
-        <nav id="navbar">
-          <header>Topic
-            <a class="nav-link" href="#filler_text_1">Filler Text 1</a>
-            <a class="nav-link" href="#filler_text_2">Filler Text 2</a>
-            <a class="nav-link" href="#filler_text_3">Filler Text 3</a>
-            <a class="nav-link" href="#filler_text_4">Filler Text 4</a>
-            <a class="nav-link" href="#filler_text_5">Filler Text 5</a>
-            
-            
-          </header>
-          </nav>
-        <section class="main-section" id="filler_text_1">
-          <header id="JavaScript_and_Java">Filler Text 1 
-          </header>
-                       
-            <p>This is paragrah 1</p>
-            <p>This is paragrah 2</p>
+  content="width=device-width,initial-scale=1">
+ <body>
+   <link rel="stylesheet" href="styles.css">
+   <div class="">
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+     <p id="description">Thank you for taking the time to help us improve the platform</p>
+     <form id="survey-form">
+       <label id="name-label">Name
+       <input id="name" name-type="text" placeholder="Enter the name" required /></label>
+       <label id="email-label">Email
+       <input id="email" type="email" placeholder="Enter the email" required/></label>
+       <label id="number-label">Age(optional)
+       <input id="number" type="number" min="13" max="35" placeholder="Age" required/>
+       </label>
+     
+       <select id="dropdown">
+         <option>Select current role</option>
+         <option>Student</option>
+         <option>Full time job</option>
+         <option>Prefer not to say</option>
+         <option>Other</option>
+       </select>
 
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-           
-            <ul>
-            <li>This is list</li> 
-            <li>This is list</li>
-            <li>This is list</li>
-            <li>This is list</li>
-            <li>This is list</li>
-            </ul>
-          
-        </section>
-        
-        <section class="main-section" id="filler_text_2">
-          <header id="JavaScript_and_Java">Filler Text 2 
-          </header>
-           <p>This is paragrah 3</p>
-            <p>This is paragrah 4</p>
-        </section>
-        <section class="main-section" id="filler_text_3">
-          <header id="JavaScript_and_Java">Filler Text 3 
-          </header>
-           <p>This is paragrah 5</p>
-            <p>This is paragrah 6</p>
-        </section>
-        <section class="main-section" id="filler_text_4">
-          <header id="JavaScript_and_Java">Filler Text 4 
-          </header>
-           <p>This is paragrah 7</p>
-            <p>This is paragrah 8</p>
-        </section>
-        <section class="main-section" id="filler_text_5">
-          <header id="JavaScript_and_Java">Filler Text 5
-          </header>
-           <p>This is paragrah 9</p>
-            <p>This is paragrah 10</p>
-        </section>
+ <input type="radio" class="inline" name="attribute" value="1" checked
+ /> Definately
+ <input type="radio" class="inline" name="attribute" value="2" 
+ /> Maybe
+ <input type="radio" class="inline" name="attribute" value="3"
+ /> Not sure
+ <select id="dropdown">
+ <option>Select an option</option>
+ <option>Challenges</option>
+ <option>Projects</option>
+ <option>Community</option>
+ <option>Open Source</option>
+ </select> 
 
-        
-       
-        
-      </main>
-    </body>
+ <input type="checkbox" class="inline" value="Front-end Projects"/> Front-end Projects
+ <input type="checkbox" class="inline" value="Back-end Projects"/> Back-end Projects
+ <input type="checkbox" class="inline" value="Data Visualization"/> Data Visualization
+ <input type="checkbox" class="inline" value="Challenges"/> Challenges
+ <input type="checkbox" class="inline" value="Open Source Community"/> Open Source Community
+ <input type="checkbox" class="inline" value="Gitter help rooms"/> Gitter help rooms
+ <input type="checkbox" class="inline" value="Videos"/> Videos 
 
-  </html>
-CSS
-#navbar {
-  position: fixed;
-  left: 0;
-  padding: 20px;
-}
-
-#navbar header {
-  font-size: 1.6em;
-  margin-bottom: 9;
-}
-
-#navbar a {
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-
-#main-doc {
-  margin-left: 200px;
-}
-
-@media (max-height: 600px) {
-  .main-section {
-    font-size: 0.7em;
-  }
-}
+      <textarea placeholder="Enter your comment here..."></textarea>
+      <button id="submit">Submit</button>          
+     </form>
+     </div>
+   
+   </body>    
+</html>
